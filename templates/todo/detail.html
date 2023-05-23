@@ -1,0 +1,23 @@
+{% extends 'layout/base.html' %}
+
+
+{% block 'title' %}
+    Editar Tarea {{contacto.name}}
+{% endblock  %}
+
+{% block 'content' %}
+
+ <span> <a href="{% url 'todo'%}">Volver atras </a> </span>
+    
+
+    <ul class="list">
+
+     <li><b>Titulo </b>{{todo.title }} </li>
+     <li><b>Descripcion </b>{{todo.description }} </li>
+     <li><b>Fecha </b>{{todo.date }} </li>
+     <li><b>Finalizacion </b>{{todo.estimated_end }} </li>
+     <li><b>Prioridad </b>{{todo.priority }} </li>
+
+
+    </ul>
+{% endblock  %}

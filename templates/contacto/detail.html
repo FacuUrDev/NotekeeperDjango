@@ -1,0 +1,25 @@
+{% extends 'layout/base.html' %}
+
+
+{% block 'title' %}
+    Editar Contacto {{contacto.name}}
+{% endblock  %}
+
+{% block 'content' %}
+
+ <span> <a href="{% url 'contacto'%}">Volver atras </a> </span>
+    
+
+    <ul class="list">
+
+        <li><b>Nombre: </b> {{contacto.name}}</li>
+        <li>  <b>Apellido: </b> {{contacto.lastname}} </li>
+        <li> <b>Telefono: </b> {{contacto.phone}} </li>
+         <li><b>Movil: </b> {{contacto.mobile}} </li>
+         <li> <b>E-mail: </b> {{contacto.email}} </li>
+        <li> <b>Compañia: </b>  {{contacto.company}} </li>
+        <li> <b>Fecha: </b> {{contacto.date}} </li>
+        <li> <b>Notas: </b> {{contacto.notes}} </li>
+
+    </ul>
+{% endblock  %}

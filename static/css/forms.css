@@ -1,0 +1,24 @@
+
+
+input{
+outline:none ;
+box-shadow: none;
+border: 1px solid ;
+padding: 5px;
+width: 100%;
+}
+
+.btn-send{
+    width: 50%;
+    background-color: rgb(21, 42, 139);
+    border: 0;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.btn-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
