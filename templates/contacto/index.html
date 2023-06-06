@@ -9,14 +9,19 @@
     {% include 'contacto/partials/search.html' %}
     {% include 'contacto/partials/by_initial.html' %}
 
-    <span> <a href="{% url 'contacto'%}">Ver todos </a> 
-            <a href="{% url 'contacto_create' %}">Añadir</a>
+    <span class="opc">
+         <a href="{% url 'contacto'%}">Ver todos </a> 
+        <a href="{% url 'contacto_create' %}">Añadir</a>
     </span>
 
         <ul class="list">
             {% for contacto in contactos %}
-                <li>{{contacto}} 
+                <li class="contact">
+                     
+                    <p >{{contacto}} </p>
+                    <p >{{contacto.mobile}} </p>
                     <span> 
+                        
                         <a href="{% url 'contacto_view' id=contacto.id %}" class=" btn btn-detail">Ver</a>
                         <a href="{% url 'contacto_edit' id=contacto.id %}" class="btn btn-edit">Editar</a>
                         <a href="{% url 'contacto_delete' id=contacto.id %}" class="btn btn-delete">Borrar</a>

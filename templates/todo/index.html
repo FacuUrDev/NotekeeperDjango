@@ -10,8 +10,9 @@
     {% include 'todo/partials/search.html' %}
 
 
-        <span> <a href="{% url 'todo'%}">Ver todos </a> 
-                <a href="{% url 'todo_create' %}">Añadir</a>
+        <span class="opc"> 
+            <a href="{% url 'todo'%}">Ver todos </a> 
+            <a href="{% url 'todo_create' %}">Añadir</a>
         </span>
         <ul class="list">
             {% for todo in todos %}

@@ -18,14 +18,16 @@
 {% if messages %}
 <ul class="messages">
     {% for message in messages %}
-    <li{% if message.tags %} class="alert-success"{% endif %}>{{ message }}</li>
+    <div class="alert alert-success" role="alert">
+        <li {% if message.tags %} class="alert-link"{% endif %}>{{ message }}</li>
+    </div>
     {% endfor %}
 </ul>
 {% endif %}
 </div>
-{{id}}
 
-<span> <a href="{% url 'contacto'%}">Volver atras </a> </span>
+
+<span class="opc"> <a href="{% url 'contacto'%}">Volver atras </a> </span>
 
 <form action="{% url 'contacto_edit' id=id %}" method="POST">
     {% csrf_token %}

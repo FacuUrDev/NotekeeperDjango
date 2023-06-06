@@ -3,17 +3,26 @@
 {%block 'title'%} Inicio {%endblock%}
 
 {% block 'content' %}
-    <h1>Bienvenido a tu gestor personal </h1>
+<div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="saludo"> Bienvenido a tu gestor personal </h1>
 
-    <div class="cards">
-        
-            
-            <a href="{% url 'contacto' %}"class="card">CONTACTOS</a>
-        
+                        <div class="cards">
+                            <div class="text-center">
+                                <a href="{% url 'contacto' %}"class="card" title="Contactos "> <img src="static\img\pngwing.com.png" class="card" alt="..."> </a>
+                               
+                            </div>
+                            
+                            
+                        
+                            <a href="{% url 'todo' %}"class="card">TAREAS</a>
 
-            <a href="{% url 'contacto' %}"class="card">NOTAS</a>
+                        </div>
+                    </div>
+                 </div>
 
-    </div>
+                </div>
 {%endblock%}
 
     

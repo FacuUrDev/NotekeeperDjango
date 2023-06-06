@@ -15,9 +15,7 @@
 {% block 'content' %}
 
 
-{{id}}
-
-<span> <a href="{% url 'contacto'%}">Volver atras </a> </span>
+<span class="opc"> <a href="{% url 'contacto'%}">Volver atras </a> </span>
 
 <form action="{% url 'contacto_create' %}" method="POST">
     {% csrf_token %}
