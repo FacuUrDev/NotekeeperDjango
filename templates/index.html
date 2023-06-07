@@ -3,26 +3,24 @@
 {%block 'title'%} Inicio {%endblock%}
 
 {% block 'content' %}
-<div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="saludo"> Bienvenido a tu gestor personal </h1>
+<div class="container-sm">
+        
+             <div class="col-sm-12">
+                <h1 class="saludo"> Bienvenido a tu gestor personal </h1>
 
-                        <div class="cards">
-                            <div class="text-center">
+                 <div class="cards">
+                           
+                    <div class="text-center">
                                 <a href="{% url 'contacto' %}"class="card" title="Contactos "> <img src="static\img\pngwing.com.png" class="card" alt="..."> </a>
-                               
-                            </div>
+                     </div>
                             
-                            
-                        
-                            <a href="{% url 'todo' %}"class="card">TAREAS</a>
-
-                        </div>
-                    </div>
-                 </div>
-
+                     <a href="{% url 'todo' %}"class="card" title="Tareas "> <img src="static\img\notas.png" class="card" alt="..."></a>
+                                                                        
                 </div>
+            </div>
+        
+
+ </div>
 {%endblock%}
 
     

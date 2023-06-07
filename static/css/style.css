@@ -19,20 +19,48 @@
 /*barra navegacion*/
 .nav {
     background-color: var(--color-primary);
-    width: 100vw;
-    height: 80px;
+    width: 100%;
+    height: 70px;
     padding: 1rem;
     display: flex;
     justify-content: center;
+    overflow: auto
 }
 
-.nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 2 rem;
-    margin: 0 1rem;
+
+
+.nav a {
+    float: left;
     padding: 0 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+  }
+
+
+.nav a:hover {
+    background-color: #000;
+  } 
+
+.nav a.active {
+    background-color: #04AA6D;
+  }
+
+.nav a.active:hover {
+        background-color: #041610;
 }
+
+@media screen and (max-width: 500px) {
+    .nav a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+}
+ 
 
 /*fin barra navegacion*/
 main {
@@ -134,20 +162,21 @@ li.alert-link {
 }
 
 /*INDEX*/
-.saludo{
-    
+.saludo  {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    color: #04AA6D;
 }
+
 .cards{
     width: 70vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: left;
+    align-items: flex-start;
     flex-wrap: wrap;
 
 }

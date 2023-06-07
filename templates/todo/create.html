@@ -16,6 +16,7 @@
 
 <span class="opc"> <a href="{% url 'todo'%}">Volver atras </a> </span>
 
+<div class="mb-3" >
 <form action="{% url 'todo_create' %}" method="POST">
     {% csrf_token %}
     
@@ -27,5 +28,5 @@
 <input type="submit" value="Enviar " class="btn-send" />
 </div>
 </form>
-
+</div>
 {% endblock  %}

@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", default=True, cast=bool)
+DEBUG = 'django-insecure-9vdb*6*h%7*@3z_yz8xrzf(pxk$kjhgtd&3y2^uzra%4y&5shn'
 
 ALLOWED_HOSTS = []
 
@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'agendaDjango.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": config('NAME'),
-        "USER": 'facuur',
-        "PASSWORD": config('PASSWORD'),
+        "NAME": 'agenda',
+        "USER": 'postgres',
+        "PASSWORD": '7567white',
         "HOST": "127.0.0.1",
         "PORT": "5432",
     }
